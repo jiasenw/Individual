@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level 1"
+            android:textSize="50dp"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timer :"
+                android:textSize="25dp"/>
+
+
+            <TextView
+                android:id ="@+id/second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textSize="25dp"
+                android:layout_weight="1">
+
+
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score: 0"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:id="@+id/target"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:text="Target: 4"
+                android:textSize="25dp"
+                android:layout_weight="1">
+
+            </TextView>
+
+        </LinearLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+
+                <TextView
+                    android:id="@+id/box1"
+                    android:layout_width="169dp"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textSize="120dp"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:enabled="true"/>
+
+                <TextView
+                    android:id="@+id/box2"
+                    android:layout_width="165dp"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:textSize="120dp"
+                    android:layout_weight="1"
+                    android:clickable="true">
+
+                </TextView>
+            </TableRow>
+
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+
+                    <TextView
+                        android:id="@+id/box3"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textSize="120dp"
+                        android:layout_weight="1"
+                        android:clickable="true"/>
+
+                    <TextView
+                        android:id="@+id/box4"
+                        android:layout_width="195dp"
+                        android:layout_height="match_parent"
+                        android:text=""
+                        android:textSize="120dp"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        >
+                    </TextView>
+                </TableRow>
+
+            </TableLayout>
+
+        <Button
+            android:id="@+id/startbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Start Game">
+
+
+        </Button>
+
+        <Button
+            android:id="@+id/exitbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Exit" />
+
+        <Button
+            android:id="@+id/nextbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Next Level" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
